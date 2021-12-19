@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="main-header">
       <h1>📘 The Code Magazine</h1>
 
       <nav>
@@ -19,7 +19,7 @@
     </header>
 
     <article>
-      <header>
+      <header class="post-header">
         <h2>The Basic Language of the Web: HTML</h2>
 
         <img
@@ -29,7 +29,9 @@
           height="50"
         />
 
-        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+        <p id="author">
+          Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+        </p>
 
         <img
           src="img/post-img.jpg"
@@ -103,7 +105,7 @@
     <aside>
       <h4>Related post</h4>
 
-      <ul>
+      <ul class="related">
         <li>
           <img
             src="img/related-1.jpg"
@@ -112,7 +114,7 @@
             height="75"
           />
           <a href="#" target="_blank">How to Learn Web Development</a>
-          <p>By Camilito Bernal</p>
+          <p class="related-author">By Camilito Bernal</p>
         </li>
 
         <li>
@@ -123,7 +125,7 @@
             height="75"
           />
           <a href="#" target="_blank"> The Unknown Power of CSS</a>
-          <p>By Juanes Ramírez</p>
+          <p class="related-author">By Juanes Ramírez</p>
         </li>
 
         <li>
@@ -134,13 +136,15 @@
             height="75"
           />
           <a href="#" target="_blank"> Why JavaScript is Awesome</a>
-          <p>By Ana María Sarmiento</p>
+          <p class="related-author">By Ana María Sarmiento</p>
         </li>
       </ul>
     </aside>
 
     <footer>
-      <p>Copyright &copy; 2027 by Camilito Bernal.</p>
+      <p id="copyright" class="copyright text">
+        Copyright &copy; 2027 by Camilito Bernal.
+      </p>
     </footer>
   </body>
 </html>
